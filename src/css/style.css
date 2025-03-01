@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'SpaceMono';
+    src: url('./SpaceMono-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #333;
+    color: whitesmoke;
+    font-family: SpaceMono;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    user-select: none;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    text-align: start;
+    font-size: 3rem;
+    padding: 20px;
+    flex: 1;
+}
+
+.scoreBoard {
+    padding: 20px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    font-size: 2rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.card {
+    border: 4px solid whitesmoke;
+    border-radius: 20px;
+
+    user-select: none;
+    cursor: pointer;
+    transition: .15s ease-in-out;
+    transition-property: scale;
+    width: min-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card:hover {
+    scale: 1.1;
+}
+
+.card h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
